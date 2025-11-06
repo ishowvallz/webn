@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+
+            max-width: 1400px;
+
+            padding-left: 20rem;
+            padding-right: 20rem;
+            box-sizing: border-box;
+            background: linear-gradient(to right, blue, cyan, gray);
+        }
+
+        .border {
+            border: 1px solid;
+        }
+
+        .border-black {
+            border-color: blue;
+        }
+
+        .border-green {
+            border-color: green;
+        }
+
+        .rounded-3 {
+            border-radius: 1rem;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border border-black rounded-3">
+            Simple Forms
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+            </form>
+        </div>
+        <div class="row"></div>
+        <div class="column border-red rounded-3">div 2</div>
+        <div class="column border-green rounded-3">div 3</div>
+        <div/>
+        <div class="border border-blue rounded-3">div 4</div>
+    </div>
+</body>
+</html>
